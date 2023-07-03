@@ -1,0 +1,14 @@
+version: "3.7"
+
+# 컴퓨터들
+services:
+  # 첫번째 컴퓨터 이름
+  docker-helloword:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+
+  # 두번째 컴퓨터 이름
+  # ...
